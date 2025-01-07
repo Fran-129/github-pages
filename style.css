@@ -17,6 +17,8 @@ header {
     justify-content: space-between; /* 左右に要素を分ける */
     align-items: center; /* 垂直方向に中央揃え */
     padding: 1rem 2rem;
+    position: relative;
+    height: 70px; /* ヘッダーの高さを固定 */
 }
 
 /* ナビゲーションメニュー */
@@ -50,10 +52,10 @@ main {
 /* プロフィール欄 */
 aside.profile-sidebar {
     position: fixed;
-    top: calc(60px + 1rem); /* ヘッダーの高さ分だけ下に配置 */
+    top: 70px; /* ヘッダーの高さと同じ値に設定 */
     right: 0;
     width: 250px;
-    height: calc(100% - 60px - 1rem); /* ヘッダーの高さ分だけ高さを調整 */
+    height: calc(100% - 70px); /* ヘッダーの高さを引いた高さを設定 */
     background-color: #f9f9f9;
     padding: 1rem;
     border-left: 2px solid #ccc;
