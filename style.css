@@ -50,15 +50,20 @@ main {
 /* プロフィール欄 */
 aside.profile-sidebar {
     position: fixed;
-    top: 0;
+    top: calc(60px + 1rem); /* ヘッダーの高さ分だけ下に配置 */
     right: 0;
     width: 250px;
-    height: 100%;
+    height: calc(100% - 60px - 1rem); /* ヘッダーの高さ分だけ高さを調整 */
     background-color: #f9f9f9;
     padding: 1rem;
     border-left: 2px solid #ccc;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
+}
+
+header {
+    position: relative; /* 必要に応じて追加 */
+    height: 60px; /* ヘッダーの高さを固定 */
 }
 
 aside.profile-sidebar h3 {
