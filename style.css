@@ -63,11 +63,6 @@ aside.profile-sidebar {
     overflow-y: auto;
 }
 
-header {
-    position: relative; /* 必要に応じて追加 */
-    height: 60px; /* ヘッダーの高さを固定 */
-}
-
 aside.profile-sidebar h3 {
     font-size: 18px;
     margin-bottom: 1rem;
