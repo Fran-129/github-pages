@@ -1,56 +1,81 @@
 @charset "UTF-8";
 
-<style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background: #0078d7;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        main {
-            padding: 1.5rem;
-            max-width: 800px;
-            margin: 2rem auto;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin-right: 250px; /* サイドバー分の余白を確保 */
-            padding: 20px;
-        }
-        .profile-sidebar {
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 250px;
-            height: 100%;
-            background-color: #f9f9f9;
-            border-left: 2px solid #ccc;
-            padding: 20px;
-            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-            overflow-y: auto;
-        }
-        .profile-sidebar h2 {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
+/* 全体のリセットと基本設定 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
 
-        .profile-sidebar p {
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-        footer {
-            text-align: center;
-            margin-top: 2rem;
-            padding: 1rem 0;
-            background: #333;
-            color: #fff;
-        }
-    </style>
+/* ヘッダー設定 */
+header {
+    background-color: #0078d7;
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+/* ナビゲーションメニュー */
+header nav {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* メインコンテンツ */
+main {
+    margin: 2rem 250px 2rem 0;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* プロフィール欄 */
+aside.profile-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-left: 2px solid #ccc;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+aside.profile-sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+aside.profile-sidebar p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* フッター設定 */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
